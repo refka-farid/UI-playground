@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="toast_general_toast">General toast</string>
+    <string name="toast_show_general_toast">Show General Toast</string>
+    <string name="toast_success_toast">Success Toast</string>
+    <string name="toast_error_toast">Error toast</string>
+    <string name="toast_warning_toast">Warning Toast</string>
+</resources>

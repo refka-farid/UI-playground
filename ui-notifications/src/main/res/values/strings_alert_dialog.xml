@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="alert_dialog_success">Success</string>
+    <string name="alert_dialog_warning">Warning</string>
+    <string name="alert_dialog_error">Error</string>
+    <string name="alert_dialog_success_title">This is success title</string>
+    <string name="alert_dialog_warning_title">This is warning title</string>
+    <string name="alert_dialog_error_title">This is error title</string>
+    <string name="alert_dialog_ok">OK</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_dialog_button_action_text">@color/colorWhite</color>
+    <color name="color_dialog_text_title_text">@color/colorWhite</color>
+    <color name="color_dialog_image_icon_tint">@color/colorWhite</color>
+    <color name="color_dialog_text_body_text">@color/colorBlack2</color>
+</resources>

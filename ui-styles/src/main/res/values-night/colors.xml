@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primaryColor">#0277bd</color>
+    <color name="primaryLightColor">#58a5f0</color>
+    <color name="primaryDarkColor">#004c8c</color>
+    <color name="primaryTextColor">#f2ffffff</color>
+
+    <color name="secondaryColor">#ffd600</color>
+    <color name="secondaryLightColor">#ffff52</color>
+    <color name="secondaryDarkColor">#c7a500</color>
+    <color name="secondaryTextColor">#a1000000</color>
+
+    <color name="colorError">#F44336</color>
+    <color name="colorOnError">#FFFFFF</color>
+
+    <color name="colorSurface">#121212</color>
+    <color name="colorOnSurface">#FFFCFC</color>
+
+    <color name="backgroundColor">#000000</color>
+    <color name="colorOnBackground">#E9E3E3</color>
+    <color name="navigationBarColor">#1A1919</color>
+
+    <color name="maskCardColor">#BBBBBB</color>
+
+
+</resources>

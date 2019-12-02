@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="BaseCeruleanTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!--region color-theme-->
+        <item name="android:windowLightNavigationBar" tools:ignore="NewApi">true</item>
+        <item name="android:navigationBarDividerColor" tools:ignore="NewApi">
+            ?colorControlHighlight
+        </item>
+
+        <!--Remap legacy AppCompat attributes to MaterialComponent attributes-->
+        <!--  <item name="colorPrimaryDark">?colorPrimaryVariant</item>-->
+        <!--  <item name="colorAccent">?colorSecondary</item>-->
+        <!-- legacy but still use it-->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryVariant">@color/primaryDarkColor</item>
+        <item name="colorOnPrimary">@color/primaryTextColor</item>
+
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorSecondaryVariant">@color/secondaryLightColor</item>
+        <item name="colorOnSecondary">@color/secondaryTextColor</item>
+
+        <!-- legacy but still use it-->
+        <item name="colorError">@color/colorError</item>
+        <item name="colorOnError">@color/colorOnError</item>
+
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="colorOnSurface">@color/colorOnSurface</item>
+
+        <!-- legacy but still use it-->
+        <item name="android:colorBackground">@color/backgroundColor</item>
+        <item name="colorOnBackground">@color/colorOnBackground</item>
+
+        <item name="android:statusBarColor">@color/primaryDarkColor</item>
+        <item name="android:navigationBarColor">@color/navigationBarColor</item>
+
+        <!-- opacity (alpha for texts depending on theme night/day)-->
+        <item name="maskCardColor">@color/maskCardColor</item>
+        <item name="alphaEmphasisHigh">@dimen/alpha_emphasis_high</item>
+        <item name="alphaEmphasisMedium">@dimen/alpha_emphasis_medium</item>
+        <item name="alphaEmphasisDisabled">@dimen/alpha_emphasis_disabled</item>
+        <!--endregion color-theme-->
+
+
+        <!--region text-type-theme-->
+        <item name="fontFamily">@font/simonetta</item>
+        <item name="android:fontFamily">@font/simonetta</item>
+
+        <item name="textAppearanceHeadline1">@style/TextAppearance.MyTheme.Headline1</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.MyTheme.Headline2</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.MyTheme.Headline3</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.MyTheme.Headline4</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.MyTheme.Headline5</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.MyTheme.Headline6</item>
+
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.MyTheme.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.MyTheme.Subtitle2</item>
+
+        <item name="textAppearanceBody1">@style/TextAppearance.MyTheme.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.MyTheme.Body2</item>
+
+        <item name="textAppearanceButton">@style/TextAppearance.MyTheme.Button</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.MyTheme.Caption</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.MyTheme.Overline</item>
+        <!--endregion text-theme-->
+
+        <!--region shape-theme -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.MyTheme.SmallComponent
+        </item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.MyTheme.MediumComponent
+        </item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.MyTheme.LargeComponent
+        </item>
+        <!--endregion shape-theme-->
+
+    </style>
+    <!--   TODO elements h1 etc...
+    inputs
+    bottom
+    switch etc...
+    components (notification/forms/)
+    https://medium.com/mindorks/mastering-android-themes-chapter-1-4aadfa750ca7
+    -->
+</resources>

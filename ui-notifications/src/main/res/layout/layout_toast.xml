@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_toast_container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/paddingStartEnd_layoutToast_toastContainer_12dp"
+    android:paddingTop="@dimen/paddingTopBottom_layoutToast_toastContainer_6dp"
+    android:paddingEnd="@dimen/paddingStartEnd_layoutToast_toastContainer_12dp"
+    android:paddingBottom="@dimen/paddingTopBottom_layoutToast_toastContainer_6dp"
+    tools:background="@drawable/background_toast_general">
+
+    <ImageView
+        android:id="@+id/imageView_toast_imageIcon"
+        android:layout_width="@dimen/side_layoutToast_imageIcon_26dp"
+        android:layout_height="@dimen/side_layoutToast_imageIcon_26dp"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/icon_general_toast" />
+
+    <TextView
+        android:id="@+id/textView_toast_textMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_layoutToast_textMessage_6dp"
+        android:textColor="@color/color_toast_text_message_text"
+        android:textSize="@dimen/textSize_layoutToast_textMessage_18sp"
+        tools:text="@string/toast_general_toast" />
+</LinearLayout>

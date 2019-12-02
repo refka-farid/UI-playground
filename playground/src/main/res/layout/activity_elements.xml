@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".styles.ElementsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="16dp"
+        android:paddingStart="10dp">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/verticalGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="10dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/horizontalGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp" />
+
+        <TextView
+            android:id="@+id/textView_elements_enableDarkTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="?alphaEmphasisMedium"
+            android:text="Enable dark theme mode"
+            android:textAppearance="?textAppearanceBody2"
+            app:layout_constraintBottom_toTopOf="@+id/TypeAttributeView_elements_header_1"
+            app:layout_constraintStart_toStartOf="@+id/verticalGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalGuideline" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switch_elements_darkTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/TypeAttributeView_elements_header_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalGuideline" />
+
+        <com.bravedroid.playground.styles.TypeAttributeView
+            android:id="@+id/TypeAttributeView_elements_header_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="\?textAppearanceHeadline1"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toTopOf="@+id/TypeAttributeView_elements_header_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/verticalGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/switch_elements_darkTheme"
+            app:previewAlpha="?alphaEmphasisHigh"
+            app:previewText="@string/text_appearance_h1_label"
+            app:previewTextAppearance="?textAppearanceHeadline1" />
+
+        <com.bravedroid.playground.styles.TypeAttributeView
+            android:id="@+id/TypeAttributeView_elements_header_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="\?textAppearanceHeadline2"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/TypeAttributeView_elements_header_3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/verticalGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/TypeAttributeView_elements_header_1"
+            app:previewAlpha="?alphaEmphasisHigh"
+            app:previewText="@string/text_appearance_h2_label"
+            app:previewTextAppearance="?textAppearanceHeadline2" />
+
+        <com.bravedroid.playground.styles.TypeAttributeView
+            android:id="@+id/TypeAttributeView_elements_header_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="\?textAppearanceHeadline3"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/TypeAttributeView_elements_header_4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/verticalGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/TypeAttributeView_elements_header_2"
+            app:previewAlpha="?alphaEmphasisHigh"
+            app:previewText="@string/text_appearance_h3_label"
+            app:previewTextAppearance="?textAppearanceHeadline3" />
+
+        <com.bravedroid.playground.styles.TypeAttributeView
+            android:id="@+id/TypeAttributeView_elements_header_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="\?textAppearanceHeadline4"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/TypeAttributeView_elements_header_5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/verticalGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/TypeAttributeView_elements_header_3"
+            app:previewAlpha="?alphaEmphasisHigh"
+            app:previewText="@string/text_appearance_h4_label"
+            app:previewTextAppearance="?textAppearanceHeadline4" />
+
+        <com.bravedroid.playground.styles.TypeAttributeView
+            android:id="@+id/TypeAttributeView_elements_header_5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="\?textAppearanceHeadline5"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/TypeAttributeView_elements_header_6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/verticalGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/TypeAttributeView_elements_header_4"
+            app:previewAlpha="?alphaEmphasisHigh"
+            app:previewText="@string/text_appearance_h5_label"
+            app:previewTextAppearance="?textAppearanceHeadline5" />
+
+        <com.bravedroid.playground.styles.TypeAttributeView
+            android:id="@+id/TypeAttributeView_elements_header_6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="\?textAppearanceHeadline6"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/verticalGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/TypeAttributeView_elements_header_5"
+            app:previewAlpha="?alphaEmphasisHigh"
+            app:previewText="@string/text_appearance_h6_label"
+            app:previewTextAppearance="?textAppearanceHeadline6" />
+
+        <com.bravedroid.playground.styles.TypeAttributeView
+            android:id="@+id/TypeAttributeView_elements_subtitle_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="\?textAppearanceSubtitle1"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintStart_toStartOf="@+id/verticalGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/TypeAttributeView_elements_header_6"
+            app:previewAlpha="?alphaEmphasisMedium"
+            app:previewText="@string/text_appearance_subtitle_1_label"
+            app:previewTextAppearance="?textAppearanceSubtitle1" />
+
+        <com.bravedroid.playground.styles.TypeAttributeView
+            android:id="@+id/TypeAttributeView_elements_subtitle_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="\?textAppearanceSubtitle2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/verticalGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/TypeAttributeView_elements_subtitle_1"
+            app:previewAlpha="?alphaEmphasisMedium"
+            app:previewText="@string/text_appearance_subtitle_2_label"
+            app:previewTextAppearance="?textAppearanceSubtitle2" />
+
+        <com.bravedroid.playground.styles.TypeAttributeView
+            android:id="@+id/TypeAttributeView_elements_body_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="\?textAppearanceBody1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/verticalGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/TypeAttributeView_elements_subtitle_2"
+            app:previewAlpha="?alphaEmphasisMedium"
+            app:previewText="@string/text_appearance_body_1_label"
+            app:previewTextAppearance="?textAppearanceBody1" />
+
+        <com.bravedroid.playground.styles.TypeAttributeView
+            android:id="@+id/TypeAttributeView_elements_body_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="\?textAppearanceBody2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/verticalGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/TypeAttributeView_elements_body_1"
+            app:previewAlpha="?alphaEmphasisMedium"
+            app:previewText="@string/text_appearance_body_2_label"
+            app:previewTextAppearance="?textAppearanceBody2" />
+
+        <com.bravedroid.playground.styles.TypeAttributeView
+            android:id="@+id/TypeAttributeView_elements_button_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="\?textAppearanceButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/verticalGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/TypeAttributeView_elements_body_2"
+            app:previewAlpha="?alphaEmphasisHigh"
+            app:previewText="@string/text_appearance_button_label"
+            app:previewTextAppearance="?textAppearanceButton" />
+
+        <com.bravedroid.playground.styles.TypeAttributeView
+            android:id="@+id/TypeAttributeView_elements_caption"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="\?textAppearanceCaption"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/verticalGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/TypeAttributeView_elements_button_text"
+            app:previewAlpha="?alphaEmphasisMedium"
+            app:previewText="@string/text_appearance_caption_label"
+            app:previewTextAppearance="?textAppearanceCaption" />
+
+        <com.bravedroid.playground.styles.TypeAttributeView
+            android:id="@+id/TypeAttributeView_elements_overline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="\?textAppearanceOverline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/verticalGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/TypeAttributeView_elements_caption"
+            app:previewAlpha="?alphaEmphasisMedium"
+            app:previewText="@string/text_appearance_overline_label"
+            app:previewTextAppearance="?textAppearanceOverline" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+

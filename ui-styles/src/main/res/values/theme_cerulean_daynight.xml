@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Top level DayNight theme to be used in AndroidManifest.xml-->
+    <style name="CeruleanTheme.DayNight" parent="CeruleanTheme"/>
+</resources>

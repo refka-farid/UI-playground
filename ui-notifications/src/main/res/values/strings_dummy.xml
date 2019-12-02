@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dummy_text_title">Lorem ipsum </string>
+    <string name="dummy_text_small">Lorem ipsum dolor sit amet, praesent vestibulum id, commodo tortor. </string>
+    <string name="dummy_text_medium">Lorem ipsum dolor sit amet, arcu mauris tempor. Odio ipsum egestas. Tincidunt sit gravida, justo mattis amet, pede sed. Quam donec erat, eu placerat lobortis, et quisque ultrices. Est eros, libero tincidunt a, pretium feugiat.</string>
+    <string name="dummy_text_large">Neque dui sapien ut justo, hendrerit scelerisque ipsum senectus congue, mauris in at pede. Suspendisse dignissim lorem tincidunt, nullam magna venenatis ullamcorper, faucibus wisi ullamcorper erat. Ut sem mauris vestibulum augue, commodo fusce sollicitudin ac ut, morbi scelerisque nam amet cursus, sed sed ornare tristique ullamcorper. Nulla proin ac vitae turpis, tellus justo dolor aliquam, vivamus per eu urna enim, elementum sollicitudin vel ipsum. Ut etiam pellentesque justo, quis maecenas nonummy velit, tincidunt nonummy rhoncus non suspendisse, orci adipiscing nunc volutpat. Suspendisse adipiscing vel elit, ipsum etiam vitae hendrerit. Molestie orci pede suspendisse, class sollicitudin ipsum vivamus, dictumst sed aliquam lorem. Phasellus suspendisse donec lorem, id mus fermentum morbi risus. Amet dolor non mattis nisl, non integer vulputate vel amet, vestibulum ipsum massa aliquam, facilis lectus sed feugiat quam. </string>
+</resources>
