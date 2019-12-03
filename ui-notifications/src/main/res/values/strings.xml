@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ui-notifications</string>
+    <string name="general_toast">General toast</string>
+    <string name="show_general_toast">Show General Toast</string>
+    <string name="success_toast">Success Toast</string>
+    <string name="error_toast">Error toast</string>
+    <string name="warning_toast">Warning Toast</string>
 </resources>
