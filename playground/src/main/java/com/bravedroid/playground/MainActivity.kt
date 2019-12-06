@@ -3,7 +3,7 @@ package com.bravedroid.playground
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.bravedroid.ui.notifications.ToastHelper
+import com.bravedroid.ui.notifications.toast.ToastHelper
 
 class MainActivity : AppCompatActivity() {
 

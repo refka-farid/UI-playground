@@ -1,4 +1,4 @@
-package com.bravedroid.ui.notifications
+package com.bravedroid.ui.notifications.toast
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,6 +7,7 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
+import com.bravedroid.ui.notifications.R
 
 fun showToast(context: Context, toastType: ToastType, message: CharSequence) {
     val toastView = LayoutInflater.from(context).inflate(R.layout.layout_toast, null)

@@ -4,8 +4,8 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.bravedroid.playground.R
-import com.bravedroid.ui.notifications.ToastType
-import com.bravedroid.ui.notifications.showToast
+import com.bravedroid.ui.notifications.toast.ToastType
+import com.bravedroid.ui.notifications.toast.showToast
 import kotlinx.android.synthetic.main.activity_custom_toast.*
 
 class CustomToastActivity : AppCompatActivity() {

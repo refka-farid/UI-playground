@@ -1,4 +1,4 @@
-package com.bravedroid.ui.notifications;
+package com.bravedroid.ui.notifications.toast;
 
 import android.content.Context;
 import android.widget.Toast;
