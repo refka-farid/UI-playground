@@ -3,7 +3,7 @@
     package="com.bravedroid.ui.notifications">
 
     <application>
-        <activity android:name=".CustomToastActivity"></activity>
+        <activity android:name="com.bravedroid.playground.notifications.CustomToastActivity"></activity>
     </application>
 
 </manifest>
