@@ -23,23 +23,37 @@ public class FacadeAlertDialogManager {
         warningAlertDialogManager = new WarningAlertDialogManager(context);
     }
 
-    public void showSuccessDialog() {
-        showDialog(successAlertDialogManager, successDialogView);
+    public void showSuccessDialog(final AlertDialogManager.OnDismissListener listener) {
+        showDialog(successAlertDialogManager, successDialogView, listener);
     }
 
-    public void showWarningDialog() {
-        showDialog(warningAlertDialogManager, warningDialogView);
+    public void showWarningDialog(final AlertDialogManager.OnWarningDismissListener listener) {
+        showWarningDialog(warningAlertDialogManager, warningDialogView, listener);
     }
 
-    public void showErrorDialog() {
-        showDialog(errorAlertDialogManager, errorDialogView);
+    public void showErrorDialog(final AlertDialogManager.OnDismissListener listener) {
+        showDialog(errorAlertDialogManager, errorDialogView, listener);
     }
 
-    private void showDialog(AlertDialogManager alertDialogManager, View dialogView) {
+
+    private void showDialog(AlertDialogManager alertDialogManager,
+                            View dialogView,
+                            final AlertDialogManager.OnDismissListener listener) {
         if (dialogView == null)
             dialogView = alertDialogManager.inflateDialogView(context);
         final AlertDialog alertDialog = alertDialogManager.createAlertDialog(context, dialogView);
-        alertDialogManager.setAlertDialogBehaviorOnDismiss(alertDialog, dialogView);
+        alertDialogManager.setAlertDialogBehaviorOnDismiss(alertDialog, dialogView, listener);
+        alertDialogManager.setAlertDialogTransparent(alertDialog);
+        alertDialog.show();
+    }
+
+    private void showWarningDialog(AlertDialogManager alertDialogManager,
+                                   View dialogView,
+                                   final AlertDialogManager.OnWarningDismissListener warningDismissListener) {
+        if (dialogView == null)
+            dialogView = alertDialogManager.inflateDialogView(context);
+        final AlertDialog alertDialog = alertDialogManager.createAlertDialog(context, dialogView);
+        alertDialogManager.setWarningAlertDialogBehaviorOnDismiss(alertDialog, dialogView, warningDismissListener);
         alertDialogManager.setAlertDialogTransparent(alertDialog);
         alertDialog.show();
     }

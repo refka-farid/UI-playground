@@ -20,5 +20,20 @@ public abstract class AlertDialogManager {
 
     public abstract AlertDialog createAlertDialog(Context context, View dialogView);
 
-    public abstract void setAlertDialogBehaviorOnDismiss(final AlertDialog alertDialog, final View alertDialogView);
+    public abstract void setAlertDialogBehaviorOnDismiss(final AlertDialog alertDialog,
+                                                         final View alertDialogView,
+                                                         final OnDismissListener listener);
+
+    public abstract void setWarningAlertDialogBehaviorOnDismiss(final AlertDialog alertDialog,
+                                                         final View alertDialogView,
+                                                         final OnWarningDismissListener listener);
+
+    public interface OnDismissListener {
+        void onDismiss();
+    }
+
+    public interface OnWarningDismissListener {
+        void onDismissYesButton();
+        void onDismissNoButton();
+    }
 }

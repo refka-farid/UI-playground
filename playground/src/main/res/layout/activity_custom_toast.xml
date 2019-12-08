@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context="com.bravedroid.playground.notifications.CustomToastActivity">
+    tools:context="com.bravedroid.playground.notifications.ToastActivity">
 
     <Button
         android:id="@+id/buttonSuccessToast"

@@ -5,7 +5,7 @@
     android:id="@+id/constraintLayout_alertDialog_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".alert.AlertDialogActivity">
+    tools:context="com.bravedroid.playground.notifications.AlertDialogActivity">
 
     <Button
         android:id="@+id/buttonSuccess"

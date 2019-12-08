@@ -3,7 +3,7 @@
     package="com.bravedroid.ui.notifications">
 
     <application>
-        <activity android:name=".alert.AlertDialogActivity"/>
+        <activity android:name="com.bravedroid.playground.notifications.AlertDialogActivity"/>
     </application>
 
 </manifest>

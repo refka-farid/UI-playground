@@ -38,13 +38,23 @@ public class SuccessAlertDialogManager extends AlertDialogManager {
     }
 
     @Override
-    public void setAlertDialogBehaviorOnDismiss(final AlertDialog alertDialog, final View successDialogView) {
+    public void setAlertDialogBehaviorOnDismiss(final AlertDialog alertDialog,
+                                                final View successDialogView,
+                                                final OnDismissListener listener) {
         successDialogView.findViewById(R.id.buttonAction).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 alertDialog.dismiss();
                 ((ViewGroup) successDialogView.getParent()).removeView(successDialogView);
+                listener.onDismiss();
             }
         });
     }
+
+    @Override
+    public void setWarningAlertDialogBehaviorOnDismiss(AlertDialog alertDialog, View alertDialogView, OnWarningDismissListener listener) {
+
+    }
+
+
 }

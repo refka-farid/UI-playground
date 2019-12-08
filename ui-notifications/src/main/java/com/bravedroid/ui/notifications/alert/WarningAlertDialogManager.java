@@ -47,13 +47,15 @@ public class WarningAlertDialogManager extends AlertDialogManager {
     }
 
     @Override
-    public void setAlertDialogBehaviorOnDismiss(final AlertDialog alertDialog, final View warningDialogView) {
+    public void setWarningAlertDialogBehaviorOnDismiss(final AlertDialog alertDialog,
+                                                       final View warningDialogView,
+                                                       final OnWarningDismissListener listener) {
         warningDialogView.findViewById(R.id.buttonYes).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 alertDialog.dismiss();
                 ((ViewGroup) warningDialogView.getParent()).removeView(warningDialogView);
-                Toast.makeText(context, "Yes", Toast.LENGTH_SHORT).show();
+                listener.onDismissYesButton();
             }
         });
 
@@ -62,8 +64,13 @@ public class WarningAlertDialogManager extends AlertDialogManager {
             public void onClick(View v) {
                 alertDialog.dismiss();
                 ((ViewGroup) warningDialogView.getParent()).removeView(warningDialogView);
-                Toast.makeText(context, "No", Toast.LENGTH_SHORT).show();
+                listener.onDismissNoButton();
             }
         });
+    }
+
+    @Override
+    public void setAlertDialogBehaviorOnDismiss(AlertDialog alertDialog, View alertDialogView, OnDismissListener listener) {
+
     }
 }

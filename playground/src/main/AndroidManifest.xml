@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="com.bravedroid.ui.notifications.alert.AlertDialogActivity">
+        <activity android:name=".notifications.AlertDialogActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

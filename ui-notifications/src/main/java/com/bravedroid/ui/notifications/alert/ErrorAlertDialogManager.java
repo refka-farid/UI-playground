@@ -39,13 +39,23 @@ public class ErrorAlertDialogManager extends AlertDialogManager {
     }
 
     @Override
-    public void setAlertDialogBehaviorOnDismiss(final AlertDialog alertDialog, final View errorDialogView) {
+    public void setAlertDialogBehaviorOnDismiss(final AlertDialog alertDialog,
+                                                final View errorDialogView,
+                                                final OnDismissListener listener) {
         errorDialogView.findViewById(R.id.buttonAction).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 alertDialog.dismiss();
                 ((ViewGroup) errorDialogView.getParent()).removeView(errorDialogView);
+                listener.onDismiss();
             }
         });
     }
+
+    @Override
+    public void setWarningAlertDialogBehaviorOnDismiss(AlertDialog alertDialog, View alertDialogView, OnWarningDismissListener listener) {
+
+    }
+
+
 }
