@@ -9,37 +9,41 @@ import android.widget.TextView
 import android.widget.Toast
 import com.bravedroid.ui.notifications.R
 
-fun showToast(context: Context, toastType: ToastType, message: CharSequence) {
-    val toastView = LayoutInflater.from(context).inflate(R.layout.layout_toast, null)
-    when (toastType) {
-        ToastType.SUCCESS -> {
-            fillToast(toastView, R.drawable.toast_success_background,
-                    R.drawable.ic_success,
-                    message)
-        }
-        ToastType.WARNING -> {
-            fillToast(toastView, R.drawable.toast_warning_background,
-                    R.drawable.ic_warning,
-                    message)
-        }
-        ToastType.ERROR -> {
-            fillToast(toastView, R.drawable.toast_error_background,
-                    R.drawable.ic_error,
-                    message)
-        }
-    }
+fun showErrorToast(context: Context, message: CharSequence) {
     with(Toast(context)) {
         duration = Toast.LENGTH_LONG
-        view = toastView
+        view =  createToastView(context,R.drawable.toast_error_background,
+                R.drawable.ic_error,
+                message)
         show()
     }
 }
 
-private fun fillToast(
-        toastView: View,
-        toastBackground: Int,
-        iconResource: Int,
-        message: CharSequence) {
+fun showWarningToast(context: Context, message: CharSequence) {
+    with(Toast(context)) {
+        duration = Toast.LENGTH_LONG
+        view =   createToastView(context,R.drawable.toast_warning_background,
+                R.drawable.ic_warning,
+                message)
+        show()
+    }
+}
+
+fun showSuccessToast(context: Context, message: CharSequence) {
+    with(Toast(context)) {
+        duration = Toast.LENGTH_LONG
+        view =  createToastView(context, R.drawable.toast_success_background,
+                R.drawable.ic_success,
+                message)
+        show()
+    }
+}
+
+private fun createToastView(context: Context,
+                      toastBackground: Int,
+                      iconResource: Int,
+                      message: CharSequence): View {
+    val toastView = LayoutInflater.from(context).inflate(R.layout.layout_toast, null)
 
     val toastContainer = toastView.findViewById<LinearLayout>(R.id.layoutToastContainer)
     val imageIcon = toastView.findViewById<ImageView>(R.id.imageIcon)
@@ -48,4 +52,6 @@ private fun fillToast(
     toastContainer.setBackgroundResource(toastBackground)
     imageIcon.setImageResource(iconResource)
     textMessage.text = message
+
+    return toastView
 }
