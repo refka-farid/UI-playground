@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ui-notifications</string>
+    <string name="general_toast">General toast</string>
+    <string name="show_general_toast">Show General Toast</string>
+    <string name="success_toast">Success Toast</string>
+    <string name="error_toast">Error toast</string>
+    <string name="warning_toast">Warning Toast</string>
+    <string name="success">Success</string>
+    <string name="warning">Warning</string>
+    <string name="error">Error</string>
+    <string name="success_title">This is success title</string>
+    <string name="warning_title">This is warning title</string>
+    <string name="error_title">This is error title</string>
+    <string name="dymy_text">Lorem epsum is simly dummy text of the printing and type setting industry </string>
+    <string name="okay">Okay</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+</resources>
