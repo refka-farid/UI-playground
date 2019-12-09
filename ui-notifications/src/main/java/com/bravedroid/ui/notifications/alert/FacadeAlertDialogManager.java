@@ -35,7 +35,6 @@ public class FacadeAlertDialogManager {
         showDialog(errorAlertDialogManager, errorDialogView, listener);
     }
 
-
     private void showDialog(AlertDialogManager alertDialogManager,
                             View dialogView,
                             final AlertDialogManager.OnDismissListener listener) {

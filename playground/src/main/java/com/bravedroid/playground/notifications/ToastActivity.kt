@@ -7,13 +7,13 @@ import com.bravedroid.playground.R
 import com.bravedroid.ui.notifications.toast.showErrorToast
 import com.bravedroid.ui.notifications.toast.showSuccessToast
 import com.bravedroid.ui.notifications.toast.showWarningToast
-import kotlinx.android.synthetic.main.activity_custom_toast.*
+import kotlinx.android.synthetic.main.activity_toast.*
 
 class ToastActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_custom_toast)
+        setContentView(R.layout.activity_toast)
 
         val callback: (View) -> Unit = {
             when (it.id) {

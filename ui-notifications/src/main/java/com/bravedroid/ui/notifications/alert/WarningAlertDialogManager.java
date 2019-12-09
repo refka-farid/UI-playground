@@ -8,7 +8,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 
@@ -28,12 +27,12 @@ public class WarningAlertDialogManager extends AlertDialogManager {
     public View inflateDialogView(Context context) {
         Resources resources = context.getResources();
         View view = LayoutInflater.from(context).inflate(
-                R.layout.layout_warning_dialog, null);
-        ((TextView) view.findViewById(R.id.textTitle)).setText(resources.getString(R.string.warning_title));
-        ((TextView) view.findViewById(R.id.textMessage)).setText(resources.getString(R.string.dymy_text));
-        ((Button) view.findViewById(R.id.buttonYes)).setText(resources.getString(R.string.yes));
-        ((Button) view.findViewById(R.id.buttonNo)).setText(resources.getString(R.string.no));
-        ((ImageView) view.findViewById(R.id.imageIcon)).setImageResource(R.drawable.ic_warning);
+                R.layout.layout_dialog_warning, null);
+        ((TextView) view.findViewById(R.id.textView_dialog_title)).setText(resources.getString(R.string.alert_dialog_warning_title));
+        ((TextView) view.findViewById(R.id.textView_dialog_textMessage)).setText(resources.getString(R.string.dummy_text_medium));
+        ((Button) view.findViewById(R.id.button_dialog_button_yes)).setText(resources.getString(R.string.all_yes));
+        ((Button) view.findViewById(R.id.button_dialog_button_no)).setText(resources.getString(R.string.all_no));
+        ((ImageView) view.findViewById(R.id.imageView_dialog_imageIcon)).setImageResource(R.drawable.icon_warning);
         return view;
     }
 
@@ -50,7 +49,7 @@ public class WarningAlertDialogManager extends AlertDialogManager {
     public void setWarningAlertDialogBehaviorOnDismiss(final AlertDialog alertDialog,
                                                        final View warningDialogView,
                                                        final OnWarningDismissListener listener) {
-        warningDialogView.findViewById(R.id.buttonYes).setOnClickListener(new View.OnClickListener() {
+        warningDialogView.findViewById(R.id.button_dialog_button_yes).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 alertDialog.dismiss();
@@ -59,7 +58,7 @@ public class WarningAlertDialogManager extends AlertDialogManager {
             }
         });
 
-        warningDialogView.findViewById(R.id.buttonNo).setOnClickListener(new View.OnClickListener() {
+        warningDialogView.findViewById(R.id.button_dialog_button_no).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 alertDialog.dismiss();

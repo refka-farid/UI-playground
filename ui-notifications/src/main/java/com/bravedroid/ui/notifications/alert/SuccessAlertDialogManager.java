@@ -20,11 +20,11 @@ public class SuccessAlertDialogManager extends AlertDialogManager {
     @Override
     public View inflateDialogView(Context context) {
         Resources resources = context.getResources();
-        View view = LayoutInflater.from(context).inflate(R.layout.layout_success_dialog, null);
-        ((TextView) view.findViewById(R.id.textTitle)).setText(resources.getString(R.string.success_title));
-        ((TextView) view.findViewById(R.id.textMessage)).setText(resources.getString(R.string.dymy_text));
-        ((Button) view.findViewById(R.id.buttonAction)).setText(resources.getString(R.string.okay));
-        ((ImageView) view.findViewById(R.id.imageIcon)).setImageResource(R.drawable.ic_success);
+        View view = LayoutInflater.from(context).inflate(R.layout.layout_dialog_success, null);
+        ((TextView) view.findViewById(R.id.textView_dialog_title)).setText(resources.getString(R.string.alert_dialog_success_title));
+        ((TextView) view.findViewById(R.id.textView_dialog_textMessage)).setText(resources.getString(R.string.dummy_text_medium));
+        ((Button) view.findViewById(R.id.button_dialog_buttonAction)).setText(resources.getString(R.string.all_okay));
+        ((ImageView) view.findViewById(R.id.imageView_dialog_imageIcon)).setImageResource(R.drawable.icon_success);
         return view;
     }
 
@@ -41,7 +41,7 @@ public class SuccessAlertDialogManager extends AlertDialogManager {
     public void setAlertDialogBehaviorOnDismiss(final AlertDialog alertDialog,
                                                 final View successDialogView,
                                                 final OnDismissListener listener) {
-        successDialogView.findViewById(R.id.buttonAction).setOnClickListener(new View.OnClickListener() {
+        successDialogView.findViewById(R.id.button_dialog_buttonAction).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 alertDialog.dismiss();
@@ -55,6 +55,4 @@ public class SuccessAlertDialogManager extends AlertDialogManager {
     public void setWarningAlertDialogBehaviorOnDismiss(AlertDialog alertDialog, View alertDialogView, OnWarningDismissListener listener) {
 
     }
-
-
 }

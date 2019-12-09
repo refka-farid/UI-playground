@@ -21,11 +21,11 @@ public class ErrorAlertDialogManager extends AlertDialogManager {
     @Override
     public View inflateDialogView(Context context) {
         Resources resources = context.getResources();
-        View view = LayoutInflater.from(context).inflate(R.layout.layout_error_dialog, null);
-        ((TextView) view.findViewById(R.id.textTitle)).setText(resources.getString(R.string.error_title));
-        ((TextView) view.findViewById(R.id.textMessage)).setText(resources.getString(R.string.dymy_text));
-        ((Button) view.findViewById(R.id.buttonAction)).setText(resources.getString(R.string.okay));
-        ((ImageView) view.findViewById(R.id.imageIcon)).setImageResource(R.drawable.ic_error);
+        View view = LayoutInflater.from(context).inflate(R.layout.layout_dialog_error, null);
+        ((TextView) view.findViewById(R.id.textView_dialog_title)).setText(resources.getString(R.string.alert_dialog_error_title));
+        ((TextView) view.findViewById(R.id.textView_dialog_textMessage)).setText(resources.getString(R.string.dummy_text_medium));
+        ((Button) view.findViewById(R.id.button_dialog_buttonAction)).setText(resources.getString(R.string.all_okay));
+        ((ImageView) view.findViewById(R.id.imageView_dialog_imageIcon)).setImageResource(R.drawable.icon_error);
         return view;
     }
 
@@ -42,7 +42,7 @@ public class ErrorAlertDialogManager extends AlertDialogManager {
     public void setAlertDialogBehaviorOnDismiss(final AlertDialog alertDialog,
                                                 final View errorDialogView,
                                                 final OnDismissListener listener) {
-        errorDialogView.findViewById(R.id.buttonAction).setOnClickListener(new View.OnClickListener() {
+        errorDialogView.findViewById(R.id.button_dialog_buttonAction).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 alertDialog.dismiss();

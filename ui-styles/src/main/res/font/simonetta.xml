@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <font
+        app:font="@font/simonetta_regular"
+        app:fontStyle="normal"
+        app:fontWeight="400"
+        android:font="@font/simonetta_regular"
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        />
+    <font
+        app:font="@font/simonetta_italic"
+        app:fontStyle="italic"
+        app:fontWeight="400"
+        android:font="@font/simonetta_italic"
+        android:fontStyle="italic"
+        android:fontWeight="400"/>
+    <font
+        app:font="@font/simonetta_black"
+        app:fontStyle="normal"
+        app:fontWeight="900"
+        android:font="@font/simonetta_black"
+        android:fontStyle="normal"
+        android:fontWeight="900" />
+    <font
+        app:font="@font/simonetta_black_italic"
+        app:fontStyle="italic"
+        app:fontWeight="900"
+        android:font="@font/simonetta_black_italic"
+        android:fontStyle="italic"
+        android:fontWeight="900" />
+</font-family>

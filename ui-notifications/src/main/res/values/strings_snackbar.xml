@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="snackbar_show_success_snackbar">Show Success Snackbar</string>
+    <string name="snackbar_show_warning_snackbar">Show Warning Snackbar</string>
+    <string name="snackbar_show_error_snackbar">Show Error Snackbar</string>
+    <string name="snackbar_subscibe_our_youtube_chanel">SUBSCIBE OUR YOUTUBE CHANEL</string>
+</resources>

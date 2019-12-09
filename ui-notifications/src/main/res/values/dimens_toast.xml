@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSize_layoutToast_textMessage_18sp">18sp</dimen>
+    <dimen name="side_layoutToast_imageIcon_26dp">26dp</dimen>
+    <dimen name="margin_layoutToast_textMessage_6dp">6dp</dimen>
+    <dimen name="paddingTopBottom_layoutToast_toastContainer_6dp">6dp</dimen>
+    <dimen name="paddingStartEnd_layoutToast_toastContainer_12dp">12dp</dimen>
+</resources>

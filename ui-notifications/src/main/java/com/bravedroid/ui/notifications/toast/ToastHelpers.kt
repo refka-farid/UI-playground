@@ -12,8 +12,8 @@ import com.bravedroid.ui.notifications.R
 fun showErrorToast(context: Context, message: CharSequence) {
     with(Toast(context)) {
         duration = Toast.LENGTH_LONG
-        view =  createToastView(context,R.drawable.toast_error_background,
-                R.drawable.ic_error,
+        view =  createToastView(context,R.drawable.background_toast_error,
+                R.drawable.icon_error,
                 message)
         show()
     }
@@ -22,8 +22,8 @@ fun showErrorToast(context: Context, message: CharSequence) {
 fun showWarningToast(context: Context, message: CharSequence) {
     with(Toast(context)) {
         duration = Toast.LENGTH_LONG
-        view =   createToastView(context,R.drawable.toast_warning_background,
-                R.drawable.ic_warning,
+        view =   createToastView(context,R.drawable.background_toast_warning,
+                R.drawable.icon_warning,
                 message)
         show()
     }
@@ -32,8 +32,8 @@ fun showWarningToast(context: Context, message: CharSequence) {
 fun showSuccessToast(context: Context, message: CharSequence) {
     with(Toast(context)) {
         duration = Toast.LENGTH_LONG
-        view =  createToastView(context, R.drawable.toast_success_background,
-                R.drawable.ic_success,
+        view =  createToastView(context, R.drawable.background_toast_success,
+                R.drawable.icon_success,
                 message)
         show()
     }
@@ -45,9 +45,9 @@ private fun createToastView(context: Context,
                       message: CharSequence): View {
     val toastView = LayoutInflater.from(context).inflate(R.layout.layout_toast, null)
 
-    val toastContainer = toastView.findViewById<LinearLayout>(R.id.layoutToastContainer)
-    val imageIcon = toastView.findViewById<ImageView>(R.id.imageIcon)
-    val textMessage = toastView.findViewById<TextView>(R.id.textMessage)
+    val toastContainer = toastView.findViewById<LinearLayout>(R.id.layout_toast_container)
+    val imageIcon = toastView.findViewById<ImageView>(R.id.imageView_toast_imageIcon)
+    val textMessage = toastView.findViewById<TextView>(R.id.textView_toast_textMessage)
 
     toastContainer.setBackgroundResource(toastBackground)
     imageIcon.setImageResource(iconResource)

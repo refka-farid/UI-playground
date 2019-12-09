@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
-    <color name="colorToastText">#ffffff</color>
-    <color name="colorToastSuccess">#1EA540</color>
-    <color name="colorToastWarning">#DFC016</color>
-    <color name="colorToastError">#ff0000</color>
     <color name="colorWhite">#ffffff</color>
-    <color name="colorSuccess">#4bb543</color>
-    <color name="colorWarning">#ffcc00</color>
-    <color name="colorNeutrial">#434343</color>
-    <color name="colorError">#cc0000</color>
-    <color name="colorTextPrimary">#212121</color>
+    <color name="colorGreen">#1EA540</color>
+    <color name="colorRed">#D10E0E</color>
+    <color name="colorYellow">#ffcc00</color>
+    <color name="colorBlack1">#434343</color>
+    <color name="colorBlack2">#212121</color>
+    <color name="colorGrey">#D3C5C1C1</color>
 
+    <color name="colorSuccess">@color/colorGreen</color>
+    <color name="colorWarning">@color/colorYellow</color>
+    <color name="colorNeutral">@color/colorBlack1</color>
+    <color name="colorError">@color/colorRed</color>
 </resources>

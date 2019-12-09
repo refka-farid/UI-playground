@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSize_layoutAlertDialog_dialogTitle_18sp">18sp</dimen>
+    <dimen name="margin_layoutAlertDialog_dialogContainer_20dp">20dp</dimen>
+    <dimen name="marginStartEnd_layoutAlertDialog_buttonAction_40dp">40dp</dimen>
+    <dimen name="marginStartEnd_layoutWarningAlertDialog_buttonAction_10dp">10dp</dimen>
+    <dimen name="padding_layoutAlertDialog_dialogTitle_10dp">10dp</dimen>
+    <dimen name="textSize_layoutAlertDialog_dialogTextMessage_16sp">16sp</dimen>
+    <dimen name="marginEnd_layoutDialogError_dialogImageIcon_10dp">10dp</dimen>
+    <dimen name="marginTop_layoutAlertDialog_dialogTextMessage_18dp">18dp</dimen>
+    <dimen name="marginStartEnd_layoutAlertDialog_dialogTextMessage_20dp">20dp</dimen>
+    <dimen name="marginBottom_layoutAlertDialog_dialogTextMessage_40dp">40dp</dimen>
+    <dimen name="textSize_layoutAlertDialog_buttonAction_14sp">14sp</dimen>
+    <dimen name="padding_layoutAlertDialog_dialogContainer_20dp">20dp</dimen>
+    <dimen name="side_layoutDialogError_dialogImageIcon_24dp">24dp</dimen>
+</resources>
