@@ -9,24 +9,24 @@
         android:id="@+id/homeActivity"
         android:name="com.bravedroid.playground.HomeActivity"
         android:label="layout_activityhome"
-        tools:layout="@layout/layout_activityhome" >
+        tools:layout="@layout/layout_activityhome">
         <action
-            android:id="@+id/action_homeActivity_to_notificationsActivity2"
-            app:destination="@id/notificationsActivity2" />
+            android:id="@+id/action_homeActivity_to_notificationsActivity"
+            app:destination="@id/notificationsActivity" />
     </activity>
     <activity
-        android:id="@+id/notificationsActivity2"
+        android:id="@+id/notificationsActivity"
         android:name="com.bravedroid.playground.NotificationsActivity"
         android:label="activity_notification"
-        tools:layout="@layout/activity_notification" >
+        tools:layout="@layout/activity_notification">
         <action
-            android:id="@+id/action_notificationsActivity2_to_alertDialogActivity"
+            android:id="@+id/action_notificationsActivity_to_alertDialogActivity"
             app:destination="@id/alertDialogActivity" />
         <action
-            android:id="@+id/action_notificationsActivity2_to_snackbarActivity"
+            android:id="@+id/action_notificationsActivity_to_snackbarActivity"
             app:destination="@id/snackbarActivity" />
         <action
-            android:id="@+id/action_notificationsActivity2_to_toastActivity"
+            android:id="@+id/action_notificationsActivity_to_toastActivity"
             app:destination="@id/toastActivity" />
     </activity>
     <activity

@@ -11,7 +11,7 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layout_activityhome)
 
-        val callback: (View) -> Unit = {view ->
+        val callback: (View) -> Unit = { view ->
             when (view.id) {
                 R.id.user_input_cardview -> {
                 }
@@ -20,7 +20,7 @@ class HomeActivity : AppCompatActivity() {
                 R.id.widgets_cardview -> {
                 }
                 R.id.notifications_cardview -> {
-                    view.findNavController().navigate(
+                    findNavController(view.id).navigate(
                             HomeActivityDirections.actionHomeActivityToNotificationsActivity2()
                     )
                 }

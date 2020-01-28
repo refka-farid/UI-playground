@@ -14,16 +14,17 @@
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
         <activity
             android:name=".HomeActivity"
-            android:theme="@style/MyDashbordTheme"
+            android:exported="true"
             android:label="HomeActivity"
-            android:exported="true" />
-        <activity android:name=".DashboardActivity">
+            android:theme="@style/MyDashbordTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="true" />
         <activity
             android:name=".styles.ElementsActivity"
             android:exported="true" />
