@@ -11,7 +11,7 @@ import com.bravedroid.ui.notifications.R
 
 fun showErrorToast(context: Context, message: CharSequence) {
     with(Toast(context)) {
-        duration = Toast.LENGTH_LONG
+        duration = Toast.LENGTH_SHORT
         view =  createToastView(context,R.drawable.background_toast_error,
                 R.drawable.icon_error,
                 message)
@@ -21,7 +21,7 @@ fun showErrorToast(context: Context, message: CharSequence) {
 
 fun showWarningToast(context: Context, message: CharSequence) {
     with(Toast(context)) {
-        duration = Toast.LENGTH_LONG
+        duration = Toast.LENGTH_SHORT
         view =   createToastView(context,R.drawable.background_toast_warning,
                 R.drawable.icon_warning,
                 message)
@@ -31,7 +31,7 @@ fun showWarningToast(context: Context, message: CharSequence) {
 
 fun showSuccessToast(context: Context, message: CharSequence) {
     with(Toast(context)) {
-        duration = Toast.LENGTH_LONG
+        duration = Toast.LENGTH_SHORT
         view =  createToastView(context, R.drawable.background_toast_success,
                 R.drawable.icon_success,
                 message)

@@ -2,33 +2,31 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/home_nav_graph"
-    app:startDestination="@id/homeActivity">
-
-    <activity
-        android:id="@+id/homeActivity"
-        android:name="com.bravedroid.playground.HomeActivity"
-        android:label="layout_activityhome"
-        tools:layout="@layout/layout_activityhome">
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/mainFragment">
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.bravedroid.playground.MainFragment"
+        android:label="MainFragment">
         <action
-            android:id="@+id/action_homeActivity_to_notificationsActivity"
-            app:destination="@id/notificationsActivity" />
-    </activity>
-    <activity
-        android:id="@+id/notificationsActivity"
-        android:name="com.bravedroid.playground.NotificationsActivity"
-        android:label="activity_notification"
-        tools:layout="@layout/activity_notification">
+            android:id="@+id/action_mainFragment_to_notificationFragment"
+            app:destination="@id/notificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.bravedroid.playground.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification">
         <action
-            android:id="@+id/action_notificationsActivity_to_alertDialogActivity"
+            android:id="@+id/action_notificationFragment_to_toastActivity"
+            app:destination="@id/toastActivity" />
+        <action
+            android:id="@+id/action_notificationFragment_to_alertDialogActivity"
             app:destination="@id/alertDialogActivity" />
         <action
-            android:id="@+id/action_notificationsActivity_to_snackbarActivity"
+            android:id="@+id/action_notificationFragment_to_snackbarActivity"
             app:destination="@id/snackbarActivity" />
-        <action
-            android:id="@+id/action_notificationsActivity_to_toastActivity"
-            app:destination="@id/toastActivity" />
-    </activity>
+    </fragment>
     <activity
         android:id="@+id/alertDialogActivity"
         android:name="com.bravedroid.playground.notifications.AlertDialogActivity"

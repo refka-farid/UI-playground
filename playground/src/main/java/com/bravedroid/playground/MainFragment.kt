@@ -1,16 +1,24 @@
 package com.bravedroid.playground
 
+
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.View
-import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import kotlinx.android.synthetic.main.layout_activityhome.*
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import kotlinx.android.synthetic.main.fragment_main.*
 
-class HomeActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.layout_activityhome)
+class MainFragment : Fragment() {
 
+    override fun onCreateView(inflater: LayoutInflater,
+                              container: ViewGroup?,
+                              savedInstanceState: Bundle?
+    ): View? {
+        return inflater.inflate(R.layout.fragment_main, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val callback: (View) -> Unit = { view ->
             when (view.id) {
                 R.id.user_input_cardview -> {
@@ -20,9 +28,8 @@ class HomeActivity : AppCompatActivity() {
                 R.id.widgets_cardview -> {
                 }
                 R.id.notifications_cardview -> {
-                    findNavController(view.id).navigate(
-                            HomeActivityDirections.actionHomeActivityToNotificationsActivity2()
-                    )
+                    findNavController().navigate(
+                            MainFragmentDirections.actionMainFragmentToNotificationFragment())
                 }
                 R.id.tool_cardview -> {
                 }
@@ -40,3 +47,4 @@ class HomeActivity : AppCompatActivity() {
 
     }
 }
+
