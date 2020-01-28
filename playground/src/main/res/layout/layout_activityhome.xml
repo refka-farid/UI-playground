@@ -19,6 +19,7 @@
             android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/user_input_cardview"
                 android:layout_width="160dp"
                 android:layout_height="190dp"
                 android:layout_margin="10dp"
@@ -64,6 +65,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/output_content_cardview"
                 android:layout_width="160dp"
                 android:layout_height="190dp"
                 android:layout_margin="10dp"
@@ -119,6 +121,7 @@
             android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/widgets_cardview"
                 android:layout_width="160dp"
                 android:layout_height="190dp"
                 android:layout_margin="10dp"
@@ -165,6 +168,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/notifications_cardview"
                 android:layout_width="160dp"
                 android:layout_height="190dp"
                 android:layout_margin="10dp"
@@ -218,6 +222,7 @@
             android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/tool_cardview"
                 android:layout_width="160dp"
                 android:layout_height="190dp"
                 android:layout_margin="10dp"
@@ -263,6 +268,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/samples_cardview"
                 android:layout_width="160dp"
                 android:layout_height="190dp"
                 android:layout_margin="10dp"

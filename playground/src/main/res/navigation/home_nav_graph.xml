@@ -9,5 +9,39 @@
         android:id="@+id/homeActivity"
         android:name="com.bravedroid.playground.HomeActivity"
         android:label="layout_activityhome"
-        tools:layout="@layout/layout_activityhome" />
+        tools:layout="@layout/layout_activityhome" >
+        <action
+            android:id="@+id/action_homeActivity_to_notificationsActivity2"
+            app:destination="@id/notificationsActivity2" />
+    </activity>
+    <activity
+        android:id="@+id/notificationsActivity2"
+        android:name="com.bravedroid.playground.NotificationsActivity"
+        android:label="activity_notification"
+        tools:layout="@layout/activity_notification" >
+        <action
+            android:id="@+id/action_notificationsActivity2_to_alertDialogActivity"
+            app:destination="@id/alertDialogActivity" />
+        <action
+            android:id="@+id/action_notificationsActivity2_to_snackbarActivity"
+            app:destination="@id/snackbarActivity" />
+        <action
+            android:id="@+id/action_notificationsActivity2_to_toastActivity"
+            app:destination="@id/toastActivity" />
+    </activity>
+    <activity
+        android:id="@+id/alertDialogActivity"
+        android:name="com.bravedroid.playground.notifications.AlertDialogActivity"
+        android:label="activity_alert_dialog"
+        tools:layout="@layout/activity_alert_dialog" />
+    <activity
+        android:id="@+id/toastActivity"
+        android:name="com.bravedroid.playground.notifications.ToastActivity"
+        android:label="activity_toast"
+        tools:layout="@layout/activity_toast" />
+    <activity
+        android:id="@+id/snackbarActivity"
+        android:name="com.bravedroid.playground.notifications.SnackbarActivity"
+        android:label="activity_snackbar"
+        tools:layout="@layout/activity_snackbar" />
 </navigation>
