@@ -18,8 +18,8 @@ class ToastActivity : AppCompatActivity() {
         val callback: (View) -> Unit = {
             when (it.id) {
                 R.id.buttonSuccessToast -> showSuccessToast(this, "Success Toast")
-                R.id.buttonErrorToast -> showWarningToast(this, "Error Toast")
-                R.id.buttonWarningToast -> showErrorToast(this, "Warning Toast")
+                R.id.buttonWarningToast -> showWarningToast(this, "warning Toast")
+                R.id.buttonErrorToast -> showErrorToast(this, "Error Toast")
             }
         }
         buttonSuccessToast.setOnClickListener(callback)

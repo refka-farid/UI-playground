@@ -13,14 +13,11 @@
         android:theme="@style/CeruleanTheme.DayNight"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
         <activity
-            android:name=".HomeActivity"
-            android:theme="@style/MyDashbordTheme"
-            android:label="HomeActivity"
-            android:exported="true" />
-        <activity android:name=".DashboardActivity">
+            android:name=".DashboardActivity"
+            android:exported="true"
+            android:label="DashboardActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

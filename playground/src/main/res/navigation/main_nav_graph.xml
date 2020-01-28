@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/mainFragment">
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.bravedroid.playground.MainFragment"
+        android:label="MainFragment">
+        <action
+            android:id="@+id/action_mainFragment_to_notificationFragment"
+            app:destination="@id/notificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.bravedroid.playground.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification">
+        <action
+            android:id="@+id/action_notificationFragment_to_toastActivity"
+            app:destination="@id/toastActivity" />
+        <action
+            android:id="@+id/action_notificationFragment_to_alertDialogActivity"
+            app:destination="@id/alertDialogActivity" />
+        <action
+            android:id="@+id/action_notificationFragment_to_snackbarActivity"
+            app:destination="@id/snackbarActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/alertDialogActivity"
+        android:name="com.bravedroid.playground.notifications.AlertDialogActivity"
+        android:label="activity_alert_dialog"
+        tools:layout="@layout/activity_alert_dialog" />
+    <activity
+        android:id="@+id/toastActivity"
+        android:name="com.bravedroid.playground.notifications.ToastActivity"
+        android:label="activity_toast"
+        tools:layout="@layout/activity_toast" />
+    <activity
+        android:id="@+id/snackbarActivity"
+        android:name="com.bravedroid.playground.notifications.SnackbarActivity"
+        android:label="activity_snackbar"
+        tools:layout="@layout/activity_snackbar" />
+</navigation>
