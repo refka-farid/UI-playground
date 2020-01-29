@@ -36,11 +36,16 @@ class NotificationFragment : Fragment() {
                     view.findNavController().navigate(
                             NotificationFragmentDirections.actionNotificationFragmentToSnackbarActivity())
                 }
+                R.id.persistent_notification_btn -> {
+                    view.findNavController().navigate(
+                            NotificationFragmentDirections.actionNotificationFragmentToPersistentNotificationFragment())
+                }
             }
         }
 
-        toast_types_btn.setOnClickListener ( callback )
+        toast_types_btn.setOnClickListener(callback)
         alert_dialog_types_btn.setOnClickListener(callback)
         snackbar_types_btn.setOnClickListener(callback)
+        persistent_notification_btn.setOnClickListener(callback)
     }
 }

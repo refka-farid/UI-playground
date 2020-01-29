@@ -26,6 +26,9 @@
         <action
             android:id="@+id/action_notificationFragment_to_snackbarActivity"
             app:destination="@id/snackbarActivity" />
+        <action
+            android:id="@+id/action_notificationFragment_to_persistentNotificationFragment"
+            app:destination="@id/persistentNotificationFragment" />
     </fragment>
     <activity
         android:id="@+id/alertDialogActivity"
@@ -42,4 +45,9 @@
         android:name="com.bravedroid.playground.notifications.SnackbarActivity"
         android:label="activity_snackbar"
         tools:layout="@layout/activity_snackbar" />
+    <fragment
+        android:id="@+id/persistentNotificationFragment"
+        android:name="com.bravedroid.playground.notifications.PersistentNotificationFragment"
+        android:label="fragment_persisitent_notification"
+        tools:layout="@layout/fragment_persisitent_notification" />
 </navigation>
