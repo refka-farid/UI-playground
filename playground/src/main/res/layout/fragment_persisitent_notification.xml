@@ -137,6 +137,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/highPriority_Notification" />
 
+        <Button
+            android:id="@+id/customNotification_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="custom Notification"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/groupNotification_btn"/>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
 

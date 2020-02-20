@@ -11,6 +11,9 @@
         <action
             android:id="@+id/action_mainFragment_to_notificationFragment"
             app:destination="@id/notificationFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_widgetsFragment"
+            app:destination="@id/widgetsFragment" />
     </fragment>
     <fragment
         android:id="@+id/notificationFragment"
@@ -50,4 +53,26 @@
         android:name="com.bravedroid.playground.notifications.PersistentNotificationFragment"
         android:label="fragment_persisitent_notification"
         tools:layout="@layout/fragment_persisitent_notification" />
+    <fragment
+        android:id="@+id/widgetsFragment"
+        android:name="com.bravedroid.playground.WidgetsFragment"
+        android:label="fragment_widgets"
+        tools:layout="@layout/fragment_widgets" >
+        <action
+            android:id="@+id/action_widgetsFragment_to_buttonsFragment"
+            app:destination="@id/buttonsFragment" />
+        <action
+            android:id="@+id/action_widgetsFragment_to_buttonsToggleGroupFragment"
+            app:destination="@id/buttonsToggleGroupFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/buttonsFragment"
+        android:name="com.bravedroid.playground.ButtonsFragment"
+        android:label="fragment_buttons"
+        tools:layout="@layout/fragment_buttons" />
+    <fragment
+        android:id="@+id/buttonsToggleGroupFragment"
+        android:name="com.bravedroid.playground.ButtonsToggleGroupFragment"
+        android:label="fragment_buttons_toggle_group"
+        tools:layout="@layout/fragment_buttons_toggle_group" />
 </navigation>

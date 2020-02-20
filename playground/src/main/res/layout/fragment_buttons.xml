@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ButtonsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:id="@+id/materialButton_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingTop="8dp"
+            android:text="Material Button"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/material_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/material_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="enabled"
+            style="@style/appButtonStyle"
+            app:layout_constraintBottom_toTopOf="@+id/unelevatedButton_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialButton_tv" />
+
+        <TextView
+            android:id="@+id/unelevatedButton_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="Unelevated Button"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/materialUnelevated_btn"
+            app:layout_constraintTop_toBottomOf="@+id/material_btn" />
+
+        <Button
+            android:id="@+id/materialUnelevated_btn"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="enabled"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/iconButton_tv"
+            app:layout_constraintTop_toBottomOf="@+id/unelevatedButton_tv" />
+
+        <TextView
+            android:id="@+id/iconButton_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="Icon Button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/materialIcon_btn"
+            app:layout_constraintTop_toBottomOf="@+id/materialUnelevated_btn" />
+
+        <Button
+            android:id="@+id/materialIcon_btn"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="enabled"
+            app:icon="@drawable/ic_favorite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/textButton_tv"
+            app:layout_constraintTop_toBottomOf="@+id/iconButton_tv" />
+
+        <TextView
+            android:id="@+id/textButton_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="Text Button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/material_text_button"
+            app:layout_constraintTop_toBottomOf="@+id/materialIcon_btn" />
+
+        <Button
+            android:id="@+id/material_text_button"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="enabled"
+            app:layout_constraintBottom_toTopOf="@+id/iconTextButton_tv"
+            app:layout_constraintTop_toBottomOf="@+id/textButton_tv" />
+
+        <TextView
+            android:id="@+id/iconTextButton_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="Icon Text Button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/material_icon_text_button"
+            app:layout_constraintTop_toBottomOf="@+id/material_text_button" />
+
+        <Button
+            android:id="@+id/material_icon_text_button"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="enabled"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:icon="@drawable/ic_favorite"
+            app:layout_constraintBottom_toTopOf="@+id/outlinedButton_tv"
+            app:layout_constraintTop_toBottomOf="@+id/iconTextButton_tv" />
+
+        <TextView
+            android:id="@+id/outlinedButton_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="Outlined buttons"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/materialoutlined_btn"
+            app:layout_constraintTop_toBottomOf="@+id/material_icon_text_button" />
+
+        <Button
+            android:id="@+id/materialoutlined_btn"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="enabled"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/iconOnlyButton_tv"
+            app:layout_constraintTop_toBottomOf="@+id/outlinedButton_tv" />
+
+
+        <TextView
+            android:id="@+id/iconOnlyButton_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="Icon only button"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/iconOnly_btn"
+            app:layout_constraintTop_toBottomOf="@+id/materialoutlined_btn" />
+
+        <Button
+            android:id="@+id/iconOnly_btn"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Icon only button"
+            app:icon="@drawable/ic_favorite"
+            app:iconGravity="textStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:iconPadding="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/enabledButton_switch"
+            app:layout_constraintTop_toBottomOf="@+id/iconOnlyButton_tv" />
+
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/enabledButton_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="enabled"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iconOnly_btn" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+

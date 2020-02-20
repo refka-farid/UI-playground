@@ -26,6 +26,8 @@ class MainFragment : Fragment() {
                 R.id.output_content_cardview -> {
                 }
                 R.id.widgets_cardview -> {
+                    findNavController().navigate(
+                            MainFragmentDirections.actionMainFragmentToWidgetsFragment())
                 }
                 R.id.notifications_cardview -> {
                     findNavController().navigate(

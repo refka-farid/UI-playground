@@ -12,6 +12,7 @@ import android.net.Uri
 import android.os.Build
 import android.os.SystemClock
 import android.support.v4.media.session.MediaSessionCompat
+import android.widget.RemoteViews
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import androidx.media.app.NotificationCompat as MediaNotification
@@ -132,7 +133,9 @@ class NotificationFactory {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             val channel = NotificationChannel(channelId,
                     "Fcm notifications",
-                    NotificationManager.IMPORTANCE_DEFAULT)
+                    NotificationManager.IMPORTANCE_DEFAULT).apply {
+                setShowBadge(true)
+            }
             notificationManager.createNotificationChannel(channel)
         }
 
@@ -145,6 +148,7 @@ class NotificationFactory {
                 .setColor(Color.BLUE)
                 .setSound(defaultSoundUri)
                 .setContentIntent(pendingIntent)
+                .setBadgeIconType(NotificationCompat.BADGE_ICON_SMALL)
                 .setLargeIcon(BitmapFactory.decodeResource(context.resources, R.drawable.bigpicture))
                 .setStyle(NotificationCompat.BigPictureStyle()
                         .bigPicture(BitmapFactory.decodeResource(context.resources, R.drawable.bigpicture))
@@ -168,7 +172,10 @@ class NotificationFactory {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             val channel = NotificationChannel(channelId,
                     "Fcm notifications",
-                    NotificationManager.IMPORTANCE_DEFAULT)
+                    NotificationManager.IMPORTANCE_DEFAULT).apply {
+                description = "description badge "
+                setShowBadge(true)
+            }
             notificationManager.createNotificationChannel(channel)
         }
 
@@ -180,6 +187,8 @@ class NotificationFactory {
                 .setAutoCancel(true)
                 .setColor(Color.BLUE)
                 .setSound(defaultSoundUri)
+                .setNumber(8)
+                .setBadgeIconType(NotificationCompat.BADGE_ICON_LARGE)
                 .setContentIntent(pendingIntent)
                 .setLargeIcon(BitmapFactory.decodeResource(context.resources, R.drawable.bigpicture))
                 .setStyle(NotificationCompat.InboxStyle()
@@ -209,7 +218,9 @@ class NotificationFactory {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             val channel = NotificationChannel(channelId,
                     "Fcm notifications",
-                    NotificationManager.IMPORTANCE_DEFAULT)
+                    NotificationManager.IMPORTANCE_DEFAULT).apply {
+                setShowBadge(true)
+            }
             notificationManager.createNotificationChannel(channel)
         }
 
@@ -247,7 +258,9 @@ class NotificationFactory {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             val channel = NotificationChannel(channelId,
                     "Fcm notifications",
-                    NotificationManager.IMPORTANCE_DEFAULT)
+                    NotificationManager.IMPORTANCE_DEFAULT).apply {
+                setShowBadge(true)
+            }
             notificationManager.createNotificationChannel(channel)
         }
 
@@ -283,7 +296,9 @@ class NotificationFactory {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             val channel = NotificationChannel(channelId,
                     "Fcm notifications",
-                    NotificationManager.IMPORTANCE_DEFAULT)
+                    NotificationManager.IMPORTANCE_DEFAULT).apply {
+                setShowBadge(true)
+            }
             notificationManager.createNotificationChannel(channel)
         }
 
@@ -330,7 +345,9 @@ class NotificationFactory {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             val channel = NotificationChannel(channelId,
                     "Fcm notifications",
-                    NotificationManager.IMPORTANCE_DEFAULT)
+                    NotificationManager.IMPORTANCE_DEFAULT).apply {
+                setShowBadge(true)
+            }
             notificationManager.createNotificationChannel(channel)
         }
 
@@ -411,4 +428,42 @@ class NotificationFactory {
         notificationManager.notify(4, summaryNotification)
 
     }
+
+    fun sendCustomNotification(
+            //title: String,
+            //messageBody: String,
+            context: Context
+            //pendingIntent: PendingIntent
+    ) {
+        val notificationManager: NotificationManager =
+                context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+
+        val channelId = "CHANNEL_ID_1"
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            val channel = NotificationChannel(channelId,
+                    "Fcm notifications",
+                    NotificationManager.IMPORTANCE_DEFAULT)
+            notificationManager.createNotificationChannel(channel)
+        }
+
+        val defaultSoundUri: Uri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION)
+
+        // Get the layouts to use in the custom notification
+        val notificationLayout = RemoteViews(context.packageName, R.layout.notification_small)
+        val notificationLayoutExpanded = RemoteViews(context.packageName, R.layout.notification_large)
+
+// Apply the layouts to the notification
+        val customNotification = NotificationCompat.Builder(context, channelId)
+                .setSmallIcon(R.drawable.ic_notifications)
+                .setStyle(NotificationCompat.DecoratedCustomViewStyle())
+                .setCustomContentView(notificationLayout)
+                .setContentTitle("custom Notification title from kts")
+                .setContentText("custom Notification body from kts")
+                .setCustomBigContentView(notificationLayoutExpanded)
+                .build()
+
+        // For android Oreo and above  notification channel is needed.
+        notificationManager.notify(0, customNotification)
+    }
+
 }

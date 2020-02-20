@@ -99,6 +99,13 @@ class PersistentNotificationFragment : Fragment() {
             val pendingIntent = pendingIntentFactory.createPendingIntent(requireContext(), DashboardActivity())
             notificationFactory.sendGroupNotification(requireContext(), pendingIntent)
         }
+
+        customNotification_btn.setOnClickListener {
+            registerNotificationChannel()
+            //NewMessageNotification.notify(requireContext(),"Reminder",1)
+            //val pendingIntent = pendingIntentFactory.createPendingIntent(requireContext(), DashboardActivity())
+            notificationFactory.sendCustomNotification(requireContext())
+        }
     }
 
     private fun registerNotificationChannel() {
