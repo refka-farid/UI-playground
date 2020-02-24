@@ -67,6 +67,9 @@
         <action
             android:id="@+id/action_widgetsFragment_to_buttonsToggleGroupFragment"
             app:destination="@id/buttonsToggleGroupFragment" />
+        <action
+            android:id="@+id/action_widgetsFragment_to_cardsFragment"
+            app:destination="@id/cardsFragment" />
     </fragment>
     <fragment
         android:id="@+id/buttonsFragment"
@@ -92,4 +95,9 @@
         android:name="com.bravedroid.playground.userInput.TextFieldFragment"
         android:label="fragment_text_field"
         tools:layout="@layout/fragment_text_field" />
+    <fragment
+        android:id="@+id/cardsFragment"
+        android:name="com.bravedroid.playground.widgets.CardsFragment"
+        android:label="fragment_cards"
+        tools:layout="@layout/fragment_cards" />
 </navigation>

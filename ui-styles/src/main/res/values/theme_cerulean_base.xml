@@ -99,4 +99,15 @@
         <item name="singleSelection">false</item>
         <item name="selectionRequired">false</item>
     </style>
+
+    <style name="AppCardStyle" parent="Widget.MaterialComponents.CardView">
+        <!--        <item name="cardBackgroundColor">?attr/colorSecondary</item>-->
+        <!--        <item name="cardForegroundColor">@color/card_foreground_color</item>-->
+        <item name="checkedIconTint">?attr/colorPrimary</item>
+        <item name="strokeColor">@android:color/transparent</item>
+        <!--        <item name="rippleColor">@color/card_ripple_color</item>-->
+        <item name="shapeAppearance">?attr/shapeAppearanceMediumComponent</item>
+        <item name="cardElevation">4dp</item>
+        <item name="strokeWidth">0dp</item>
+    </style>
 </resources>
