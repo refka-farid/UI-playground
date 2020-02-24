@@ -1,14 +1,13 @@
-package com.bravedroid.playground
+package com.bravedroid.playground.widgets
 
 
 import android.os.Bundle
-import android.text.TextUtils
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
+import com.bravedroid.playground.R
 import kotlinx.android.synthetic.main.fragment_widgets.*
 
 /**

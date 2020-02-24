@@ -86,7 +86,7 @@
     <style name="appButtonStyle" parent="Widget.MaterialComponents.Button">
         <item name="enforceMaterialTheme">true</item>
         <item name="enforceTextAppearance">true</item>
-        <item name="cornerRadius">3dp</item>
+        <item name="cornerRadius">2dp</item>
         <item name="elevation">2dp</item>
         <item name="shapeAppearance">?attr/shapeAppearanceSmallComponent</item>
     </style>

@@ -1,4 +1,4 @@
-package com.bravedroid.playground
+package com.bravedroid.playground.notifications
 
 
 import android.os.Bundle
@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
+import com.bravedroid.playground.R
 import kotlinx.android.synthetic.main.fragment_notification.*
 
 class NotificationFragment : Fragment() {

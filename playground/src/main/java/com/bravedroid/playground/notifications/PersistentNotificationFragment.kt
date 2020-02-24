@@ -13,8 +13,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.bravedroid.playground.DashboardActivity
-import com.bravedroid.playground.NotificationFactory
-import com.bravedroid.playground.PendingIntentFactory
 import com.bravedroid.playground.R
 import kotlinx.android.synthetic.main.fragment_persisitent_notification.*
 

@@ -14,10 +14,13 @@
         <action
             android:id="@+id/action_mainFragment_to_widgetsFragment"
             app:destination="@id/widgetsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_userInputsFragment"
+            app:destination="@id/userInputsFragment" />
     </fragment>
     <fragment
         android:id="@+id/notificationFragment"
-        android:name="com.bravedroid.playground.NotificationFragment"
+        android:name="com.bravedroid.playground.notifications.NotificationFragment"
         android:label="fragment_notification"
         tools:layout="@layout/fragment_notification">
         <action
@@ -55,7 +58,7 @@
         tools:layout="@layout/fragment_persisitent_notification" />
     <fragment
         android:id="@+id/widgetsFragment"
-        android:name="com.bravedroid.playground.WidgetsFragment"
+        android:name="com.bravedroid.playground.widgets.WidgetsFragment"
         android:label="fragment_widgets"
         tools:layout="@layout/fragment_widgets" >
         <action
@@ -67,12 +70,26 @@
     </fragment>
     <fragment
         android:id="@+id/buttonsFragment"
-        android:name="com.bravedroid.playground.ButtonsFragment"
+        android:name="com.bravedroid.playground.widgets.ButtonsFragment"
         android:label="fragment_buttons"
         tools:layout="@layout/fragment_buttons" />
     <fragment
         android:id="@+id/buttonsToggleGroupFragment"
-        android:name="com.bravedroid.playground.ButtonsToggleGroupFragment"
+        android:name="com.bravedroid.playground.widgets.ButtonsToggleGroupFragment"
         android:label="fragment_buttons_toggle_group"
         tools:layout="@layout/fragment_buttons_toggle_group" />
+    <fragment
+        android:id="@+id/userInputsFragment"
+        android:name="com.bravedroid.playground.userInput.UserInputsFragment"
+        android:label="fragment_user_inputs"
+        tools:layout="@layout/fragment_user_inputs" >
+        <action
+            android:id="@+id/action_userInputsFragment_to_textFieldFragment"
+            app:destination="@id/textFieldFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/textFieldFragment"
+        android:name="com.bravedroid.playground.userInput.TextFieldFragment"
+        android:label="fragment_text_field"
+        tools:layout="@layout/fragment_text_field" />
 </navigation>

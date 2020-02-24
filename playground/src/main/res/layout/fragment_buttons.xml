@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ButtonsFragment">
+    tools:context=".widgets.ButtonsFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -30,10 +30,10 @@
 
         <Button
             android:id="@+id/material_btn"
+            style="@style/appButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="enabled"
-            style="@style/appButtonStyle"
             app:layout_constraintBottom_toTopOf="@+id/unelevatedButton_tv"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -47,9 +47,9 @@
             android:text="Unelevated Button"
             android:textSize="16sp"
             android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/materialUnelevated_btn"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/materialUnelevated_btn"
             app:layout_constraintTop_toBottomOf="@+id/material_btn" />
 
         <Button
@@ -58,9 +58,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="enabled"
+            app:layout_constraintBottom_toTopOf="@+id/iconButton_tv"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/iconButton_tv"
             app:layout_constraintTop_toBottomOf="@+id/unelevatedButton_tv" />
 
         <TextView
@@ -69,11 +69,11 @@
             android:layout_height="wrap_content"
             android:paddingTop="8dp"
             android:text="Icon Button"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/materialIcon_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/materialUnelevated_btn" />
 
         <Button
@@ -83,9 +83,9 @@
             android:layout_height="wrap_content"
             android:text="enabled"
             app:icon="@drawable/ic_favorite"
+            app:layout_constraintBottom_toTopOf="@+id/textButton_tv"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/textButton_tv"
             app:layout_constraintTop_toBottomOf="@+id/iconButton_tv" />
 
         <TextView
@@ -94,11 +94,11 @@
             android:layout_height="wrap_content"
             android:paddingTop="8dp"
             android:text="Text Button"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/material_text_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/materialIcon_btn" />
 
         <Button
@@ -106,10 +106,10 @@
             style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             android:text="enabled"
             app:layout_constraintBottom_toTopOf="@+id/iconTextButton_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textButton_tv" />
 
         <TextView
@@ -118,11 +118,11 @@
             android:layout_height="wrap_content"
             android:paddingTop="8dp"
             android:text="Icon Text Button"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/material_icon_text_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/material_text_button" />
 
         <Button
@@ -131,10 +131,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="enabled"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             app:icon="@drawable/ic_favorite"
             app:layout_constraintBottom_toTopOf="@+id/outlinedButton_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/iconTextButton_tv" />
 
         <TextView
@@ -145,9 +145,9 @@
             android:text="Outlined buttons"
             android:textSize="16sp"
             android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/materialoutlined_btn"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/materialoutlined_btn"
             app:layout_constraintTop_toBottomOf="@+id/material_icon_text_button" />
 
         <Button
@@ -156,9 +156,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="enabled"
+            app:layout_constraintBottom_toTopOf="@+id/iconOnlyButton_tv"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/iconOnlyButton_tv"
             app:layout_constraintTop_toBottomOf="@+id/outlinedButton_tv" />
 
 
@@ -169,10 +169,10 @@
             android:paddingTop="8dp"
             android:text="Icon only button"
             android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/iconOnly_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/materialoutlined_btn" />
 
         <Button
@@ -183,12 +183,21 @@
             android:contentDescription="Icon only button"
             app:icon="@drawable/ic_favorite"
             app:iconGravity="textStart"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             app:iconPadding="0dp"
             app:layout_constraintBottom_toTopOf="@+id/enabledButton_switch"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/iconOnlyButton_tv" />
 
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:src="@drawable/ic_add_black_24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iconOnly_btn" />
 
         <com.google.android.material.switchmaterial.SwitchMaterial
             android:id="@+id/enabledButton_switch"
@@ -196,10 +205,10 @@
             android:layout_height="wrap_content"
             android:checked="true"
             android:text="enabled"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/iconOnly_btn" />
+            app:layout_constraintTop_toBottomOf="@+id/floatingActionButton" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
 

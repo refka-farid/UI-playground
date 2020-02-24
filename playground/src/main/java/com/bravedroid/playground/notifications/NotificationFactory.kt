@@ -1,4 +1,4 @@
-package com.bravedroid.playground
+package com.bravedroid.playground.notifications
 
 import android.app.Notification
 import android.app.NotificationChannel
@@ -15,6 +15,7 @@ import android.support.v4.media.session.MediaSessionCompat
 import android.widget.RemoteViews
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
+import com.bravedroid.playground.R
 import androidx.media.app.NotificationCompat as MediaNotification
 
 class NotificationFactory {

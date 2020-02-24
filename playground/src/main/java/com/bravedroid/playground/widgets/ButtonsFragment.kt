@@ -1,4 +1,4 @@
-package com.bravedroid.playground
+package com.bravedroid.playground.widgets
 
 
 import android.os.Bundle
@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
+import com.bravedroid.playground.R
 import kotlinx.android.synthetic.main.fragment_buttons.*
 
 class ButtonsFragment : Fragment() {

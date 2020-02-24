@@ -1,4 +1,4 @@
-package com.bravedroid.playground
+package com.bravedroid.playground.notifications
 
 import android.app.Activity
 import android.app.PendingIntent
