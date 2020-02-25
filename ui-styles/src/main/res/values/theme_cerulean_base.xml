@@ -110,4 +110,9 @@
         <item name="cardElevation">4dp</item>
         <item name="strokeWidth">0dp</item>
     </style>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light">
+        <item name="bottomNavigationStyle">@style/AppBottomNavigation</item>
+    </style>
+    <style name="AppBottomNavigation" parent="@style/Widget.MaterialComponents.BottomNavigationView.Colored" />
 </resources>

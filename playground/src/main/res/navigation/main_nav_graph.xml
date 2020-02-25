@@ -70,6 +70,9 @@
         <action
             android:id="@+id/action_widgetsFragment_to_cardsFragment"
             app:destination="@id/cardsFragment" />
+        <action
+            android:id="@+id/action_widgetsFragment_to_bottomNavigationFragment"
+            app:destination="@id/bottomNavigationFragment" />
     </fragment>
     <fragment
         android:id="@+id/buttonsFragment"
@@ -100,4 +103,8 @@
         android:name="com.bravedroid.playground.widgets.CardsFragment"
         android:label="fragment_cards"
         tools:layout="@layout/fragment_cards" />
+    <fragment
+        android:id="@+id/bottomNavigationFragment"
+        android:name="com.bravedroid.playground.widgets.BottomNavigationFragment"
+        android:label="BottomNavigationFragment" />
 </navigation>

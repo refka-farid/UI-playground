@@ -31,7 +31,7 @@ class WidgetsFragment : Fragment() {
                     )
 
                 }
-                R.id.buttonsToggleGroup_btn -> {
+                R.id.buttonsToggleGroup_btn ->{
                     view.findNavController().navigate(
                             WidgetsFragmentDirections.actionWidgetsFragmentToButtonsToggleGroupFragment()
                     )
@@ -41,11 +41,17 @@ class WidgetsFragment : Fragment() {
                             WidgetsFragmentDirections.actionWidgetsFragmentToCardsFragment()
                     )
                 }
+                R.id.bottomNavigation_btn -> {
+                    view.findNavController().navigate(
+                            WidgetsFragmentDirections.actionWidgetsFragmentToBottomNavigationFragment()
+                    )
+                }
             }
         }
 
         buttonsSamples_btn.setOnClickListener(callback)
         buttonsToggleGroup_btn.setOnClickListener(callback)
         cards_btn.setOnClickListener(callback)
+        bottomNavigation_btn.setOnClickListener(callback)
     }
 }
