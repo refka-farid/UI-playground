@@ -73,6 +73,9 @@
         <action
             android:id="@+id/action_widgetsFragment_to_bottomNavigationFragment"
             app:destination="@id/bottomNavigationFragment" />
+        <action
+            android:id="@+id/action_widgetsFragment_to_bottomSheetFragment"
+            app:destination="@id/bottomSheetFragment" />
     </fragment>
     <fragment
         android:id="@+id/buttonsFragment"
@@ -107,4 +110,8 @@
         android:id="@+id/bottomNavigationFragment"
         android:name="com.bravedroid.playground.widgets.BottomNavigationFragment"
         android:label="BottomNavigationFragment" />
+    <fragment
+        android:id="@+id/bottomSheetFragment"
+        android:name="com.bravedroid.playground.widgets.BottomSheetFragment"
+        android:label="BottomSheetFragment" />
 </navigation>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingStart="16dp"
+            android:paddingTop="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="100dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/standardBottomSheetButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show Standard Bottom Sheet" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/modalBottomSheetButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show Modal Bottom Sheet" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/toggleModalDismissAnimationButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Toggle modal dismiss animation" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/standardBottomSheet"
+        style="@style/Widget.MaterialComponents.BottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorGrey"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:text="Bottom Sheet"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.MyTheme.Headline4"
+            android:textColor="?attr/colorOnSurface" />
+
+        <TextView
+            android:id="@+id/textView-2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="20dp"
+            android:padding="8dp"
+            android:text="@string/dummy_text_medium"
+            android:textAppearance="@style/TextAppearance.MyTheme.Headline6"
+            android:textColor="?attr/colorOnSurface" />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
