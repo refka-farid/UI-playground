@@ -76,15 +76,18 @@
         <action
             android:id="@+id/action_widgetsFragment_to_bottomSheetFragment"
             app:destination="@id/bottomSheetFragment" />
+        <action
+            android:id="@+id/action_widgetsFragment_to_bottomAppBarFragment"
+            app:destination="@id/bottomAppBarFragment" />
     </fragment>
     <fragment
         android:id="@+id/buttonsFragment"
-        android:name="com.bravedroid.playground.widgets.ButtonsFragment"
+        android:name="com.bravedroid.playground.widgets.buttons.ButtonsFragment"
         android:label="fragment_buttons"
         tools:layout="@layout/fragment_buttons" />
     <fragment
         android:id="@+id/buttonsToggleGroupFragment"
-        android:name="com.bravedroid.playground.widgets.ButtonsToggleGroupFragment"
+        android:name="com.bravedroid.playground.widgets.buttons.ButtonsToggleGroupFragment"
         android:label="fragment_buttons_toggle_group"
         tools:layout="@layout/fragment_buttons_toggle_group" />
     <fragment
@@ -103,15 +106,20 @@
         tools:layout="@layout/fragment_text_field" />
     <fragment
         android:id="@+id/cardsFragment"
-        android:name="com.bravedroid.playground.widgets.CardsFragment"
+        android:name="com.bravedroid.playground.widgets.card.CardsFragment"
         android:label="fragment_cards"
         tools:layout="@layout/fragment_cards" />
     <fragment
         android:id="@+id/bottomNavigationFragment"
-        android:name="com.bravedroid.playground.widgets.BottomNavigationFragment"
+        android:name="com.bravedroid.playground.widgets.bottomnavigation.BottomNavigationFragment"
         android:label="BottomNavigationFragment" />
     <fragment
         android:id="@+id/bottomSheetFragment"
-        android:name="com.bravedroid.playground.widgets.BottomSheetFragment"
+        android:name="com.bravedroid.playground.widgets.bottomsheet.BottomSheetFragment"
         android:label="BottomSheetFragment" />
+    <fragment
+        android:id="@+id/bottomAppBarFragment"
+        android:name="com.bravedroid.playground.widgets.bottomappbar.BottomAppBarFragment"
+        android:label="fragment_bottom_app_bar"
+        tools:layout="@layout/fragment_bottom_app_bar" />
 </navigation>

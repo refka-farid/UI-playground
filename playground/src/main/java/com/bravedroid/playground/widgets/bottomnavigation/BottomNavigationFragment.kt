@@ -1,4 +1,4 @@
-package com.bravedroid.playground.widgets
+package com.bravedroid.playground.widgets.bottomnavigation
 
 
 import android.os.Bundle
@@ -12,10 +12,13 @@ import com.bravedroid.playground.R
 /**
  * A simple [Fragment] subclass.
  */
-class CardsFragment : Fragment() {
+class BottomNavigationFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_cards, container, false)
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_bottom_navigation, container, false)
     }
+
+
 }

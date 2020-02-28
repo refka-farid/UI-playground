@@ -1,4 +1,4 @@
-package com.bravedroid.playground.widgets
+package com.bravedroid.playground.widgets.bottomsheet
 
 import android.os.Bundle
 import android.view.LayoutInflater

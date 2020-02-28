@@ -1,4 +1,4 @@
-package com.bravedroid.playground.widgets
+package com.bravedroid.playground.widgets.bottomsheet
 
 import android.graphics.Color
 import android.os.Bundle

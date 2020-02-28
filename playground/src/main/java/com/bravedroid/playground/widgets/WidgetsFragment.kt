@@ -19,6 +19,7 @@ class WidgetsFragment : Fragment() {
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_widgets, container, false)
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -51,6 +52,12 @@ class WidgetsFragment : Fragment() {
                             WidgetsFragmentDirections.actionWidgetsFragmentToBottomSheetFragment()
                     )
                 }
+
+                R.id.bottom_appBar_btn -> {
+                    view.findNavController().navigate(
+                            WidgetsFragmentDirections.actionWidgetsFragmentToBottomAppBarFragment()
+                    )
+                }
             }
         }
 
@@ -59,5 +66,6 @@ class WidgetsFragment : Fragment() {
         cards_btn.setOnClickListener(callback)
         bottomNavigation_btn.setOnClickListener(callback)
         bottomSheet_btn.setOnClickListener(callback)
+        bottom_appBar_btn.setOnClickListener(callback)
     }
 }

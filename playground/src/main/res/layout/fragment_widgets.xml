@@ -83,5 +83,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/bottomNavigation_btn" />
 
+        <Button
+            android:id="@+id/bottom_appBar_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Bottom App Bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bottomSheet_btn" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
