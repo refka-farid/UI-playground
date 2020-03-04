@@ -1,4 +1,4 @@
-package com.bravedroid.playground
+package com.bravedroid.playground.notifications
 
 
 import android.os.Bundle
@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
+import com.bravedroid.playground.R
 import kotlinx.android.synthetic.main.fragment_notification.*
 
 class NotificationFragment : Fragment() {
@@ -36,11 +37,16 @@ class NotificationFragment : Fragment() {
                     view.findNavController().navigate(
                             NotificationFragmentDirections.actionNotificationFragmentToSnackbarActivity())
                 }
+                R.id.persistent_notification_btn -> {
+                    view.findNavController().navigate(
+                            NotificationFragmentDirections.actionNotificationFragmentToPersistentNotificationFragment())
+                }
             }
         }
 
-        toast_types_btn.setOnClickListener ( callback )
+        toast_types_btn.setOnClickListener(callback)
         alert_dialog_types_btn.setOnClickListener(callback)
         snackbar_types_btn.setOnClickListener(callback)
+        persistent_notification_btn.setOnClickListener(callback)
     }
 }

@@ -22,10 +22,14 @@ class MainFragment : Fragment() {
         val callback: (View) -> Unit = { view ->
             when (view.id) {
                 R.id.user_input_cardview -> {
+                    findNavController().navigate(
+                            MainFragmentDirections.actionMainFragmentToUserInputsFragment())
                 }
                 R.id.output_content_cardview -> {
                 }
                 R.id.widgets_cardview -> {
+                    findNavController().navigate(
+                            MainFragmentDirections.actionMainFragmentToWidgetsFragment())
                 }
                 R.id.notifications_cardview -> {
                     findNavController().navigate(
@@ -44,7 +48,6 @@ class MainFragment : Fragment() {
         notifications_cardview.setOnClickListener(callback)
         tool_cardview.setOnClickListener(callback)
         samples_cardview.setOnClickListener(callback)
-
     }
 }
 

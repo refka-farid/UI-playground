@@ -11,10 +11,16 @@
         <action
             android:id="@+id/action_mainFragment_to_notificationFragment"
             app:destination="@id/notificationFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_widgetsFragment"
+            app:destination="@id/widgetsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_userInputsFragment"
+            app:destination="@id/userInputsFragment" />
     </fragment>
     <fragment
         android:id="@+id/notificationFragment"
-        android:name="com.bravedroid.playground.NotificationFragment"
+        android:name="com.bravedroid.playground.notifications.NotificationFragment"
         android:label="fragment_notification"
         tools:layout="@layout/fragment_notification">
         <action
@@ -26,6 +32,9 @@
         <action
             android:id="@+id/action_notificationFragment_to_snackbarActivity"
             app:destination="@id/snackbarActivity" />
+        <action
+            android:id="@+id/action_notificationFragment_to_persistentNotificationFragment"
+            app:destination="@id/persistentNotificationFragment" />
     </fragment>
     <activity
         android:id="@+id/alertDialogActivity"
@@ -42,4 +51,75 @@
         android:name="com.bravedroid.playground.notifications.SnackbarActivity"
         android:label="activity_snackbar"
         tools:layout="@layout/activity_snackbar" />
+    <fragment
+        android:id="@+id/persistentNotificationFragment"
+        android:name="com.bravedroid.playground.notifications.PersistentNotificationFragment"
+        android:label="fragment_persisitent_notification"
+        tools:layout="@layout/fragment_persisitent_notification" />
+    <fragment
+        android:id="@+id/widgetsFragment"
+        android:name="com.bravedroid.playground.widgets.WidgetsFragment"
+        android:label="fragment_widgets"
+        tools:layout="@layout/fragment_widgets" >
+        <action
+            android:id="@+id/action_widgetsFragment_to_buttonsFragment"
+            app:destination="@id/buttonsFragment" />
+        <action
+            android:id="@+id/action_widgetsFragment_to_buttonsToggleGroupFragment"
+            app:destination="@id/buttonsToggleGroupFragment" />
+        <action
+            android:id="@+id/action_widgetsFragment_to_cardsFragment"
+            app:destination="@id/cardsFragment" />
+        <action
+            android:id="@+id/action_widgetsFragment_to_bottomNavigationFragment"
+            app:destination="@id/bottomNavigationFragment" />
+        <action
+            android:id="@+id/action_widgetsFragment_to_bottomSheetFragment"
+            app:destination="@id/bottomSheetFragment" />
+        <action
+            android:id="@+id/action_widgetsFragment_to_bottomAppBarFragment"
+            app:destination="@id/bottomAppBarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/buttonsFragment"
+        android:name="com.bravedroid.playground.widgets.buttons.ButtonsFragment"
+        android:label="fragment_buttons"
+        tools:layout="@layout/fragment_buttons" />
+    <fragment
+        android:id="@+id/buttonsToggleGroupFragment"
+        android:name="com.bravedroid.playground.widgets.buttons.ButtonsToggleGroupFragment"
+        android:label="fragment_buttons_toggle_group"
+        tools:layout="@layout/fragment_buttons_toggle_group" />
+    <fragment
+        android:id="@+id/userInputsFragment"
+        android:name="com.bravedroid.playground.userInput.UserInputsFragment"
+        android:label="fragment_user_inputs"
+        tools:layout="@layout/fragment_user_inputs" >
+        <action
+            android:id="@+id/action_userInputsFragment_to_textFieldFragment"
+            app:destination="@id/textFieldFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/textFieldFragment"
+        android:name="com.bravedroid.playground.userInput.TextFieldFragment"
+        android:label="fragment_text_field"
+        tools:layout="@layout/fragment_text_field" />
+    <fragment
+        android:id="@+id/cardsFragment"
+        android:name="com.bravedroid.playground.widgets.card.CardsFragment"
+        android:label="fragment_cards"
+        tools:layout="@layout/fragment_cards" />
+    <fragment
+        android:id="@+id/bottomNavigationFragment"
+        android:name="com.bravedroid.playground.widgets.bottomnavigation.BottomNavigationFragment"
+        android:label="BottomNavigationFragment" />
+    <fragment
+        android:id="@+id/bottomSheetFragment"
+        android:name="com.bravedroid.playground.widgets.bottomsheet.BottomSheetFragment"
+        android:label="BottomSheetFragment" />
+    <fragment
+        android:id="@+id/bottomAppBarFragment"
+        android:name="com.bravedroid.playground.widgets.bottomappbar.BottomAppBarFragment"
+        android:label="fragment_bottom_app_bar"
+        tools:layout="@layout/fragment_bottom_app_bar" />
 </navigation>
