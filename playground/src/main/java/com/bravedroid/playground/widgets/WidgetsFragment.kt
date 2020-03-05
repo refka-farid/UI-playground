@@ -58,6 +58,16 @@ class WidgetsFragment : Fragment() {
                             WidgetsFragmentDirections.actionWidgetsFragmentToBottomAppBarFragment()
                     )
                 }
+                R.id.drawerNavigation_btn -> {
+                    view.findNavController().navigate(
+                            WidgetsFragmentDirections.actionWidgetsFragmentToDrawerNavigationFragment()
+                    )
+                }
+                R.id.customDrawerNavigation_btn -> {
+                    view.findNavController().navigate(
+                            WidgetsFragmentDirections.actionWidgetsFragmentToCustomDrawerNavigationFragment()
+                    )
+                }
             }
         }
 
@@ -67,5 +77,7 @@ class WidgetsFragment : Fragment() {
         bottomNavigation_btn.setOnClickListener(callback)
         bottomSheet_btn.setOnClickListener(callback)
         bottom_appBar_btn.setOnClickListener(callback)
+        drawerNavigation_btn.setOnClickListener(callback)
+        customDrawerNavigation_btn.setOnClickListener(callback)
     }
 }

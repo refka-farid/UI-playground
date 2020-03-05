@@ -28,4 +28,6 @@
         viverra rhoncus sit amet nec magna. Donec lacinia ligula at libero volutpat volutpat nec nec
         tortor.
     </string>
+    <string name="open">open</string>
+    <string name="close">close</string>
 </resources>

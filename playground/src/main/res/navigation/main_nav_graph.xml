@@ -60,7 +60,7 @@
         android:id="@+id/widgetsFragment"
         android:name="com.bravedroid.playground.widgets.WidgetsFragment"
         android:label="fragment_widgets"
-        tools:layout="@layout/fragment_widgets" >
+        tools:layout="@layout/fragment_widgets">
         <action
             android:id="@+id/action_widgetsFragment_to_buttonsFragment"
             app:destination="@id/buttonsFragment" />
@@ -79,6 +79,12 @@
         <action
             android:id="@+id/action_widgetsFragment_to_bottomAppBarFragment"
             app:destination="@id/bottomAppBarFragment" />
+        <action
+            android:id="@+id/action_widgetsFragment_to_drawerNavigationFragment"
+            app:destination="@id/drawerNavigationFragment" />
+        <action
+            android:id="@+id/action_widgetsFragment_to_customDrawerNavigationFragment"
+            app:destination="@id/customDrawerNavigationFragment" />
     </fragment>
     <fragment
         android:id="@+id/buttonsFragment"
@@ -94,7 +100,7 @@
         android:id="@+id/userInputsFragment"
         android:name="com.bravedroid.playground.userInput.UserInputsFragment"
         android:label="fragment_user_inputs"
-        tools:layout="@layout/fragment_user_inputs" >
+        tools:layout="@layout/fragment_user_inputs">
         <action
             android:id="@+id/action_userInputsFragment_to_textFieldFragment"
             app:destination="@id/textFieldFragment" />
@@ -122,4 +128,14 @@
         android:name="com.bravedroid.playground.widgets.bottomappbar.BottomAppBarFragment"
         android:label="fragment_bottom_app_bar"
         tools:layout="@layout/fragment_bottom_app_bar" />
+    <fragment
+        android:id="@+id/drawerNavigationFragment"
+        android:name="com.bravedroid.playground.widgets.drawernavigation.DrawerNavigationFragment"
+        android:label="fragment_drawer_navigation"
+        tools:layout="@layout/fragment_drawer_navigation" />
+    <fragment
+        android:id="@+id/customDrawerNavigationFragment"
+        android:name="com.bravedroid.playground.widgets.drawernavigation.CustomDrawerNavigationFragment"
+        android:label="fragment_custom_drawer_navigation"
+        tools:layout="@layout/fragment_custom_drawer_navigation" />
 </navigation>
